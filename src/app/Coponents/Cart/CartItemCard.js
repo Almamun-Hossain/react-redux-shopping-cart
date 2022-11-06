@@ -11,9 +11,6 @@ import {
 } from "../../Features/Cart/CartSlice";
 
 function CartItemCard({ item }) {
-  //destruct them item value
-  let { id, quantity } = item;
-
   //set the product info to state
   const [product, setProduct] = useState({});
 
@@ -36,8 +33,8 @@ function CartItemCard({ item }) {
     dispatch(removeFormCart(item));
   };
   useEffect(() => {
-    axios.get(`https://fakestoreapi.com/products/${id}`).then((res) => {
-      setProduct({ ...res.data, quantity: quantity });
+    axios.get(`https://fakestoreapi.com/products/${item.id}`).then((res) => {
+      setProduct({ ...res.data, quantity: item.quantity });
     });
   }, [item]);
   let content = "";
