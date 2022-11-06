@@ -1,0 +1,24 @@
+.img-container {
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background: #fafcfc;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.single-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+}

@@ -1,0 +1,11 @@
+.cart-icon {
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  padding: 8px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  z-index: 99999;
+}

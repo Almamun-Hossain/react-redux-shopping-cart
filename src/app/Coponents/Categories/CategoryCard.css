@@ -1,0 +1,9 @@
+.custom-card {
+  height: 100%;
+  background: #fafcfc;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
