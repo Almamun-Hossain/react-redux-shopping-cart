@@ -13,7 +13,8 @@ const CartSlice = createSlice({
       //check carts not empty or exist
       if (!state.carts) {
         //when carts its empty add the new item to the carts
-        state.carts = action.payload;
+        //{...state, state.carts: action.payload}
+        state.carts = [action.payload];
       } else {
         //when carts not empty
         //check the rquested item is already exist in cart
