@@ -12,11 +12,11 @@ function App() {
     <Fragment>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/category/:categoryName" element={<CategoryProducts />} />
-        <Route path="/products" element={<AllProducts />} />
-        <Route path="/product/:productId" element={<SingleProductDetails />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="category/:categoryName" element={<CategoryProducts />} />
+        <Route path="products" element={<AllProducts />} />
+        <Route path="product/:productId" element={<SingleProductDetails />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="cart" element={<Cart />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Fragment>
